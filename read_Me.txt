@@ -3,13 +3,9 @@
 Author: Attiso Bhowmick  
 Date: 6 November 2025  
 
----
-
 ## Project Overview
 This project presents an optimization algorithm that identifies the most suitable box for a given case of cutlery items.  
 Each case contains multiple SKUs (different cutlery types). The algorithm applies geometric logic to compare item surface areas and box dimensions, ensuring efficient packing and minimal unused space.
-
----
 
 ## Problem Context
 All items considered are cutlery pieces grouped into "cases," where each case can include multiple SKUs.
@@ -23,8 +19,6 @@ The algorithm follows a systematic approach:
 
 In summary:  
 The largest surface area determines the face fit, while the total height determines whether the items can stack within the box.
-
----
 
 ## Algorithm Description
 
@@ -60,14 +54,10 @@ The final output contains the following fields:
 - Matched face type  
 - Fit classification  
 
----
-
 ## Additional Notes
 - Uses the copy() method during DataFrame operations to avoid pandas SettingWithCopy warnings.  
 - Considers all possible box orientations (LB, BH, HL).  
 - Always returns the best possible match, even when a perfect stack is not achievable.  
-
----
 
 ## Output Example
 
@@ -75,20 +65,16 @@ The final output contains the following fields:
 |----------|--------------|---------------|-------------|--------------|----------|
 | C001     | SKU_12       | 45.3          | BOX_B2      | L×B          | Perfect Fit |
 
----
-
 ## Technologies Used
 - Python  
 - Pandas, NumPy for data handling  
 - CSV-based data input  
-
----
 
 ## Future Improvements Planned:
 - Add 3D visualization of fit accuracy  
 - Include cost-based optimization for multi-box packing  
 - Develop a web dashboard (e.g., Streamlit) for interactive analysis  
 - make all possible 3D orientations of the SKUs for a more optimsed result (needs larger dataset and more time)
----
 
 Developed as a practical data-driven optimization tool for packaging efficiency.
+
